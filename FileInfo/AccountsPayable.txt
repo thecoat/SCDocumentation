@@ -1,0 +1,22 @@
+ZZI (Accounts Payable files)
+
+Comma delimited flat file, each line represents the total purchased by GL Code for a given invoice.  In other words the same invoice may appear on multiple lines if the purchase included
+product from multiple GL codes. 
+
+Vendor ID,Business Date,Vendor Invoice Number,General Ledger Code,Cost,Invoice Date,Shift ID,Date Due,"VO",Invoice Total,Invoice Total,Station ID,Quantity
+
+Field - Data Type - Description
+Vendor ID - Integer - The ID Number for the Vendor In Store Chek
+Business Date - Date - Business Date of the Purchase Order 
+Vendor Invoice Number - String - The Invoice Number entered by the user when posting a purchase typically the vendor generated invoice number.
+General Ledger Code - String - The GL Code for this line entry.
+Cost - Decimal (Currency) - The sum total of item costs that appear on this purchase grouped by the GL
+Invoice Date - Date - Invoice Date on the PO
+Shift ID - Integer - The Store Chek Shift Counter ID 
+Date Due - Date - The vendor invoice Due Date
+"VO" - String - Static always appears as a literal string.
+Invoice Total - Decimal (Currency) - The grand total of the posted invoice.
+Invoice Total - Decimal (Currency) - The grand total of the posted invoice (yes this is listed twice, for backward compatibility purposes.).
+Station ID - Integer - Store Chek Station ID
+Quantity - Integer - Total Onhand quantity of all items purchased on this invoice under this GL Code.
+

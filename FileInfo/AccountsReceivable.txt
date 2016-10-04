@@ -1,0 +1,43 @@
+ZZA (Accounts Receivable files)
+19 line block file where each invoice is represented by 19 lines.  The very first block is batch header data (not an invoice).
+
+Header (first 19 lines)
+	Station ID - Integer - Store Chek Station ID
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Business Date - Date - Business Date of the AR Invoice
+	"ARS" - String - Litteral used to denote the header block.
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+	Blank Line
+Detail (each 19 lines repeating after the header)
+	Station ID - Integer - Store Chek Station ID
+	Invoice Number - String - Vendor Invoice if it exists otherwise the Store Chek Invoice Number made of Store ID, Shift ID, Register ID, and InvoiceID.
+	Tender Code - Integer - 0 if ROA otherwise the Store Chek Payment method ID
+	Account Number - String - AR Account
+	Invoice Amount - Decimal - 0 if ROA otherwise Amount of Charge.
+	Business Date - Date - Business Date of the Charge
+	Truck Number - String - Truck Info Element
+	PO Number - String - Truck Info Element 
+	Trip Number - String - Truck Info Element
+	Payment Code - Integer - Payment method ID if ROA otherwise 0
+	Payment Amount - Integer - 0 if not an ROA otherwise Amount of Payment
+	Fuel Permit Number - String - Truck Info Element
+	Diesel Gallons - Decimal - Gallon amount of Diesel
+	Diesel Dollars - Decimal - Monetary Amount of Diesel
+	Non fuel Sales Amount - Decimal - Monetary Amount of non fuel sales
+	Gas Gallons - Decimal - Total Gas Gallons
+	Gas Dollars - Decimal - Total Gas Dollars
+	Diesel Sales Flag - Integer - 11 if sale had diesel, 1 if not.
+

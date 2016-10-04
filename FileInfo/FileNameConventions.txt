@@ -1,0 +1,21 @@
+Store Chek Transmit files encapsulate the data for an entire day.  
+
+The file names use the following format:
+ZZ{Type}01{StationID}.{DD}.
+
+{Type} = “C”,”A”, or “I”
+	C – GL File
+	A -	AR File 
+	I - AP File
+	
+{StationID} - Individual location ID in MasterSysFile, Three digits zero padded
+
+{DD} - Day of the Month.
+
+Example 
+	ZZA01023.09  AR file for Station 23 from the 9th.
+	
+	
+
+
+	

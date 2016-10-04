@@ -1,0 +1,18 @@
+ZZC (General Ledger)
+
+Comma delimited flat file with each line representing a GL Entry
+Store ID, Store ID, Business Date,GL Code, Sales Flag, Dollar Amount Shift 1,Dollar Amount Shift 2,Dollar Amount Shift 3, Quantity Shift 1,Quantity Shift 2,Quantity Shift 3, Compatibility Flag, Compatibility Flag
+
+Store ID - Integer - Location ID
+Store ID - Integer - Location ID (yes it's the same thing twice)
+Business Date - Date - Date of the entries
+GL Code - String - General Ledger Code
+Sales Flag - String - Y or N, Y indicates Sales entries, N indicates Payment entries
+Dollar Amount Shift 1 - Decimal - Monetary value for 1st shift
+Dollar Amount Shift 2 - Decimal - Monetary value for 2nd shift
+Dollar Amount Shift 3 - Decimal - Monetary value for 3rd shift
+Quantity Shift 1 - Integer - Quantity for 1st shift
+Quantity Shift 2 - Integer - Quantity for 2nd shift
+Quantity Shift 3 - Integer - Quantity for 3rd shift
+Compatibility Flag - Integer - Static value of 0 
+Compatibility Flag - Integer - Static value of 0 
