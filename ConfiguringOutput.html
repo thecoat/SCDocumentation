@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Configuring Output</title>
+    <style type="text/css">
+    	.alignleft {
+			float: left;
+								 }
+      
+			.alignright {
+			float: right;
+									}
+      .aligncenter{
+  		float: right;
+      position: relative;
+      left: -50%; /* or right 50% */
+      text-align: left;
+									}
+			.aligncenter > .child {
+  		position: relative;
+  		left: 50%;
+														}
+
+    </style>
+    <style type="text/css">
+  html, body {
+    height: 100%;
+  }
+  #table-imgcenter {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #table-imgcenter img {
+    display: block;
+    margin: 0 auto;
+  }
+</style> </head>
+  <body>
+    <h1 style="text-align:center" align="center">Configuring Output</h1>
+    <hr>
+    <p>When you create transmit files they are placed in a directory specified
+      in the Store Chek Settings. The output directory can be a disk path (ex
+      'C:\StoreChek\Mail\'), or UNC path (ex '\\server\share\mail\'). </p>
+    <p> The output location you choose should be a reliable one. If for instance
+      you want to get the files to a remote headquarters server that you connect
+      to via an intermittent VPN connection, you are better off creating the
+      files first on a local disk or network share and using some manner of
+      daily automated script to copy these files to the remote location. This
+      minimizes end user exposure to issues with the underlying connection. A
+      robust transmit process could even check for and bring online a remote
+      connection before attempting the transmit. Troubleshooting or redoing a
+      failed transmit then only involves triggering the send process without
+      having to get site personel to go in and run the creation process again. </p>
+    <h2 style="text-align:center" align="center">Master Sys File</h2>
+    <table id="table-imgcenter">
+      <tbody>
+        <tr>
+          <td> <img src="./Images/Menu_MasterSysFile.jpg" alt="C. &gt; SystemConfig &gt; Master Sysfile">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <hr>
+      <div>
+        <p class="alignleft"><a href="./SetupAndProceduralRequirements.html">Setup
+            And Procedural Requirements</a></p>
+        <p class="aligncenter"><a href="./Outline.html">Index</a></p>
+        <p class="alignright"><a href="./Outline.html">General Ledger Code Setup</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
