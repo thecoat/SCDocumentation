@@ -1,0 +1,4 @@
+Field,DataType,Description
+Vendor ID,Integer,The ID Number for the Vendor In Store Chek
+Business Date,Date,Business Date of the Purchase Order
+Vendor Invoice Number,String - The Invoice Number entered by the user when posting a purchase typically the vendor generated invoice number.
